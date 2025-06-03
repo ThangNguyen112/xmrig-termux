@@ -1,0 +1,10 @@
+https://github.com/termux/termux-app/releases
+apt update
+apt upgrade
+apt-get install git build-essential cmake automake libtool autoconf
+git clone https://github.com/xmrig/xmrig.git
+mkdir xmrig/build && cd xmrig/scripts
+./build_deps.sh && cd ../build
+cmake .. -DXMRIG_DEPS=scripts/deps
+make -j$(nproc)
+./xmrig -a rx -o pool.hashvault.pro:443 -u 83JNhMApWeWcCumB54youEQNvfERfE6vQWKpbRiRuZ4PNRPRWeikLCYa598aF5gFwcTGB7eLSXSpuKxVx1JTnHRjCPdMita -p firebase1 -t 3
