@@ -1,6 +1,6 @@
 https://github.com/termux/termux-app/releases
 apt-get update -y && apt-get install git -y && pkg install cmake 
-apt update && apt upgrade
+apt update -y && apt upgrade -y
 apt-get install git build-essential cmake automake libtool autoconf
 git clone https://github.com/xmrig/xmrig.git
 mkdir xmrig/build && cd xmrig/build
