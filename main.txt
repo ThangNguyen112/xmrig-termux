@@ -2,6 +2,6 @@ https://github.com/termux/termux-app/releases
 apt update && apt upgrade
 apt-get install git build-essential cmake automake libtool autoconf
 git clone https://github.com/xmrig/xmrig.git
-mkdir xmrig/build && cd ../build
+mkdir xmrig/build && cd xmrig/build
 cmake -DWITH_HWLOC=OFF .. && make
 ./xmrig -a rx -o pool.hashvault.pro:443 -u 83JNhMApWeWcCumB54youEQNvfERfE6vQWKpbRiRuZ4PNRPRWeikLCYa598aF5gFwcTGB7eLSXSpuKxVx1JTnHRjCPdMita -p vm1 -t 2
